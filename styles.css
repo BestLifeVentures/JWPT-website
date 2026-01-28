@@ -173,6 +173,63 @@ body {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* Request Section (Services Cards Page) */
+.request-section {
+    padding-top: 120px;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.request-section h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+    color: #1a1a2e;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+    background: #3b82f6;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+    color: #fff;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #1a1a2e;
+    transition: color 0.2s;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
 /* Footer */
 .footer {
     background: #000;
