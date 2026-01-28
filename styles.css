@@ -116,7 +116,7 @@ body {
     box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
 }
 
-/* Hero Section */
+/* Hero Section (Video) */
 .hero {
     position: relative;
     height: 100vh;
@@ -146,36 +146,36 @@ body {
     z-index: -1;
 }
 
-.hero-content {
+/* Intro Section (Below Video) */
+.intro-section {
+    background: #3b82f6;
+    padding: 2rem 1rem;
     text-align: center;
-    padding-top: 70px;
-    margin-top: -15vh;
 }
 
-.headshot-container {
-    margin-bottom: 1rem;
+.intro-section .headshot-container {
+    margin-bottom: 0.5rem;
 }
 
-.headshot {
-    width: 180px;
-    height: 180px;
+.intro-section .headshot {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.name {
+.intro-section .name {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.5px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Request Section */
 .request-section {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     background: #f8f9fa;
 }
 
@@ -186,14 +186,9 @@ body {
 
 .request-section h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-
-.request-section > .container > p {
-    text-align: center;
-    color: #666;
-    margin-bottom: 3rem;
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+    color: #1a1a2e;
 }
 
 .services-grid {
@@ -209,23 +204,31 @@ body {
     text-decoration: none;
     color: inherit;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+    background: #3b82f6;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+    color: #fff;
 }
 
 .service-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
     color: #1a1a2e;
+    transition: color 0.2s;
 }
 
 .service-card p {
     color: #666;
     font-size: 0.95rem;
+    transition: color 0.2s;
 }
 
 /* Footer */
@@ -466,13 +469,9 @@ body {
         display: block;
     }
 
-    .hero-content {
-        margin-top: 0;
-    }
-
-    .headshot {
-        width: 140px;
-        height: 140px;
+    .intro-section .headshot {
+        width: 80px;
+        height: 80px;
     }
 
     .page-header h1 {
